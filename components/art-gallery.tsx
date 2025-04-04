@@ -1,4 +1,4 @@
-import type { ArtProps } from "@/lib/getArt";
+import { ArtProps } from "@/types";
 import ArtCard from "./art-card";
 
 export default function ArtGallery({ artworks }: { artworks: ArtProps[] }) {

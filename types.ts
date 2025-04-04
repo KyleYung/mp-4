@@ -4,3 +4,10 @@ export type ArtProps = {
     image_url: string;
     dated: string;
 };
+
+export type HarvardArtItem = {
+    id: number;
+    title: string;
+    primaryimageurl: string;
+    dated: string;
+  };

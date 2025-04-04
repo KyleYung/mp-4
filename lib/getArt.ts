@@ -1,4 +1,5 @@
 import { ArtProps } from "@/types";
+import { HarvardArtItem } from "@/types";
 
 export default async function getArt(): Promise<ArtProps[]> {
   const apiKey = process.env.HARVARD_API_KEY;
@@ -13,7 +14,7 @@ export default async function getArt(): Promise<ArtProps[]> {
 
   const data = await res.json();
   
-  return data.records.map((item: any) => ({
+  return data.records.map((item: HarvardArtItem) => ({
     id: item.id,
     title: item.title,
     image_url: item.primaryimageurl,

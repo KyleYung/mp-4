@@ -10,7 +10,7 @@ export default async function ArtPage() {
     console.error("Failed to fetch data", error);
     return (
       <div className="min-h-screen flex items-center justify-center bg-red-100">
-        <p className="text-red-600 text-lg font-semibold"> Sorry, we couldn't load the gallery. Please try again later.</p>
+        <p className="text-red-600 text-lg font-semibold"> Sorry, we could not load the gallery. Please try again later.</p>
       </div>
     );
   }
